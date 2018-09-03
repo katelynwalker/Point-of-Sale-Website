@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vallcharia|Hall of thrones</title>
+    <link rel="icon" href="images/axe.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+    <!-- font-family: 'Fondamento', cursive;-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <section class="left">
+                <div class="pic">
+                    <img src="images/Badger_Logo-03.png">
+                </div>
+            <div class="logo">Vallchaira</div>
+        </section>
+        <section class="right">
+            <div class="cart">
+                <a href="#">
+                    <img id="haul" src="images/boat.png">
+                </a>
+            </div>
+            <div class="home">
+                <a href='#'>Products</a>
+            </div>
+         </section>
+    </nav>
+
+
+    <div class="welcome-block">
+            <h1>Welcome to Vallchaira</h1>
+            <p>For Over 4,000 Years, Our Thrones Have Been Hand Crafted From The Finest of Oak and Steel. Forged at Black-Rock Peak, We Insure That No Matter Where You Rest Your Rump You Will Always Feel Like Royalty.</p>
+        </div>
+
+
+    <section id='storePage'>
+        <section id="storeProducts"></section>
+    </section>
+
+
+    <section id='checkoutForm'>
+        <h3>Checkout</h3>
+        <button id="checkoutContinue">Continue Shopping</button>
+        <button id='emptyCart'>Empty Cart</button>
+        <p id='emptyCartWarning'>Your cart is currently empty</p>
+        <section id='paymentInfo'>
+            <div id='cartContainer'>
+                <div id='checkoutCart'></div>
+                <img src=''>
+            </div>
+            <input type="radio" name='paymentOption' id="cash">
+            <label for="cash">Cash</label>
+            <input type="radio" name='paymentOption' id="creditCard">
+            <label for="creditCard">Credit Card</label>
+
+            <form id="ccInfo">
+                <label for="ccName">Name on Credit Card</label>
+                <input type="text" id="ccName">
+                <label for="ccNumber">Credit Card Number</label>
+                <input type="text" id="ccNumber">
+                <label for="ccCVV">CVV</label>
+                <input type="text" id="ccCVV">
+
+                <button type="button" class='placeOrder'>Place Order</button>
+            </form>
+
+            <form id='cashInfo'>
+                <!--First paragraph will display the total required-->
+                <p id='cashRequired'></p>
+                <!--This label will be where the user inputs the entered cash-->
+                <label for='cashGiven'>Currency Given</label>
+                <input type='number' id='cashGiven'>
+                <!--This label will show if the user has not input enough cash-->
+                <p id='warning'></p>
+                <!--This label will show the change the user is due, if any-->
+                <p id='cashReturned'></p>
+
+                <button type='button' class='placeOrder'>Place Order</button>
+            </form>
+        </section>
+    </section>
+
+    <section id="bForm">
+            <section id="close">
+                    <img id="X" src="newimages/X1.png"/>
+                </section>
+            
+        <form id="bDis">
+                <h2>Hmmm... Very Observant, A Warrior Such As Yourself May Be of Value </h2>
+            <h4 id="hmmm">Reveal Yourself To Recieve Future Badger Disconts From Vallchaira</h4>
+            <label for="bName">Name</label>
+            <input type="txt" id="bName" placeholder="Name">
+            <label for="bMail">House</label>
+            <input type="text" id="bMail" placeholder = "E-Mail@.com">
+            <button type="button" id="bad">Submit</button>
+        </form>
+    </section>
+
+    <section id='receiptForm'>
+        <h3 id='thankYouMessage'>Thank you for your order!</h3>
+        <div id='receiptCart'></div>
+        <div id='paidMessage'></div>
+    </section>
+
+    <section id="cartDisplay">
+        <img id="X" src="newimages/X1.png"/>
+        <div id="cart"></div>
+        <button id="continue">Continue Shopping</button>
+        <button id="check">Check Out</button>
+    </section>
+    <footer class="foot"></footer>
+
+    <img src="images/background.jpg" class="background-image">
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
